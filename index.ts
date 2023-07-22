@@ -1,7 +1,7 @@
 "use strict";
 
 import axios_static, { AxiosInstance, AxiosStatic } from "axios";
-import { useRequestMetric, useResponseMetric } from "axios-http-metric";
+import { useRequestMetric, useResponseMetric } from "axios-metric";
 import { LogLevel, Logger } from "logger";
 
 export type AxiosMetricLoggerOptions = {
@@ -22,7 +22,7 @@ export type AxiosMetricLoggerOptions = {
   shortend_axios_error: boolean;
 };
 
-declare module "axios-http-metric" {
+declare module "axios-metric" {
   export interface Metadata {
     reference_id?: string;
     log_options?: Partial<AxiosMetricLoggerOptions>;
