@@ -21,6 +21,7 @@ node_modules/
 !.env.template
 
 ## folders
-/temp
+temp
 logs
 dist
+tsconfig.tsbuildinfo
