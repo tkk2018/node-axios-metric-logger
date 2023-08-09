@@ -1,5 +1,3 @@
-"use strict";
-
 import axios_static, { AxiosInstance, AxiosStatic } from "axios";
 import { useRequestMetric, useResponseMetric } from "axios-metric";
 import { LogLevel, Logger } from "logger";
